@@ -9,7 +9,7 @@ class Sidebar extends React.Component {
   }
   componentDidMount() {
     fetch(
-      "https://newsapi.org/v2/top-headlines?country=in&apiKey=9b6e4ba310984f1eb99e6246ec316f40"
+      "https://newsapi.org/v2/top-headlines?country=us&apiKey=5ddc8e6d385f4f339865f9dcc482c8ed"
     )
       .then((res) => res.json())
       .then((data) => {
@@ -34,7 +34,7 @@ class Sidebar extends React.Component {
             })}
           </div>
         ) : (
-          <p>Loding</p>
+          <p>Loding..</p>
         )}
       </>
     );

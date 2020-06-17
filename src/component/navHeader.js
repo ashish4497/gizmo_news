@@ -12,7 +12,7 @@ class Navheading extends React.Component {
 
   componentDidMount() {
     fetch(
-      "https://newsapi.org/v2/sources?language=en&country=us&apiKey=9b6e4ba310984f1eb99e6246ec316f40"
+      "https://newsapi.org/v2/sources?apiKey=5ddc8e6d385f4f339865f9dcc482c8ed"
     )
       .then((res) => res.json())
       .then((data) => {
@@ -23,7 +23,8 @@ class Navheading extends React.Component {
   handleChange = (id = "abc-news") => {
     console.log(id, "check id");
     fetch(
-      `https://newsapi.org/v2/everything?sources=${id}&from=2020-06-15&to=2020-06-15&sortBy=popularity&apiKey=9b6e4ba310984f1eb99e6246ec316f40`
+      `
+https://newsapi.org/v2/everything?sources=${id}&apiKey=5ddc8e6d385f4f339865f9dcc482c8ed`
     )
       .then((res) => res.json())
       .then((data) => {

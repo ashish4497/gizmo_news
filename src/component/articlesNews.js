@@ -8,7 +8,7 @@ export default function Newsarticle(props) {
       <h3 className="top_news"> Top news</h3>
       <div className="news_articles padding">
         <div className="grid-4">
-          {newsArticle.map((value) => {
+          {newsArticle.slice(1).map((value) => {
             return (
               <div className="news_detail">
                 <div>

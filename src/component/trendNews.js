@@ -6,7 +6,14 @@ export default function Template(props) {
   return (
     <div className="grid-1">
       <div className="img-sec">
-        <img src={news.urlToImage}></img>
+        <img
+          src={
+            news.urlToImage
+              ? news.urlToImage
+              : "https://upload.wikimedia.org/wikipedia/commons/0/0a/No-image-available.png"
+          }
+          alt="news"
+        ></img>
       </div>
       <div className="news_description">
         <span>{news.source.name}</span>

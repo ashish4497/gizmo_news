@@ -2,7 +2,6 @@ import React from "react";
 
 export default function Newsarticle(props) {
   let newsArticle = props.news;
-  console.log(newsArticle);
 
   return (
     <div>
@@ -13,7 +12,13 @@ export default function Newsarticle(props) {
             return (
               <div className="news_detail">
                 <div>
-                  <img src={value.urlToImage}></img>
+                  <img
+                    src={
+                      value.urlToImage ||
+                      "https://upload.wikimedia.org/wikipedia/commons/0/0a/No-image-available.png"
+                    }
+                    alt="news"
+                  ></img>
                 </div>
                 <div>
                   <span>{value.source.name}</span>

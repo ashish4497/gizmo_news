@@ -8,7 +8,9 @@ export default function Topheader() {
       </div>
       <div className="search_bar">
         <input type="text" placeholder="search keyword"></input>
-        {/* <input type="text" placeholder="search keyword"></input> */}
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+        </select>
       </div>
     </div>
   );

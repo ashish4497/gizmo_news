@@ -3,23 +3,13 @@ import "./style.css";
 import Navheading from "./component/navHeader";
 import Topheader from "./component/topHeader";
 import Sidebar from "./component/sideBar";
-import Herosec from "./component/heroSec";
 export default function App() {
   return (
     <>
-      <div>
-        <Topheader />
-      </div>
-      <div>
-        <Navheading />
-      </div>
+      <Topheader />
       <div className="grid padding">
-        <div>
-          <Herosec />
-        </div>
-        <div>
-          <Sidebar />
-        </div>
+        <Navheading />
+        <Sidebar />
       </div>
     </>
   );

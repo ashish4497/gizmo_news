@@ -201,6 +201,7 @@ button:hover {
 .top_headlines {
   border: 1px solid black;
   padding: 12px;
+  height: fit-content;
 }
 .top_headlines h3 {
   color: red;

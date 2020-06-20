@@ -65,20 +65,6 @@ class Topheader extends React.Component {
     };
   }
 
-  handleChange = (event) => {
-    console.log(event);
-    let val = event.target.value;
-    this.setState({ inputValue: val });
-  };
-
-  handleClick = (e, index) => {
-    console.log(e, "index");
-
-    console.log(index, "checkkkkk");
-
-    // this.setState({idind:ex });
-  };
-
   render() {
     let country = this.state.countries;
 

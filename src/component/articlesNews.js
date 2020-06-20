@@ -23,7 +23,7 @@ export default function Newsarticle(props) {
                 <div>
                   <span>{value.source.name}</span>
                   <time>{new Date(value.publishedAt).toLocaleString()}</time>
-                  <a>
+                  <a href="#">
                     <h2>{value.title}</h2>
                   </a>
                   <p>{value.description}</p>

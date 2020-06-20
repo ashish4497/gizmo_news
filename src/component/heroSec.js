@@ -1,7 +1,6 @@
 import React from "react";
 import Template from "./trendNews";
 import Newsarticle from "./articlesNews";
-// import Nextweb from "./nextWeb";
 
 function Herosec(props) {
   let news = props.filterSource;

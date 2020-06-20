@@ -18,7 +18,7 @@ export default function Template(props) {
       <div className="news_description">
         <span>{news.source.name}</span>
         <time>{new Date(news.publishedAt).toLocaleString()}</time>
-        <a>
+        <a href="#">
           <h2>{news.title}</h2>
         </a>
         <p>{news.description}</p>
